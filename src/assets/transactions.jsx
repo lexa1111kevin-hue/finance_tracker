@@ -59,26 +59,40 @@ export default function Transactions() {
       </table>
       {isOpen && (
         <div className="fixed inset-0 bg-black/40 flex items-center justify-center">
-          <div className="bg-white p-6 rounded-lg w-96">
+          <div className="bg-white p-6 rounded-lg w-[600px]">
             <h2 className="text-xl font-bold mb-4">Add Transaction</h2>
-
-            <input
-              type="text"
-              placeholder="Category"
-              className="w-full border p-2 rounded mb-3"
-            />
-
-            <input
-              type="number"
-              placeholder="Amount"
-              className="w-full border p-2 rounded mb-3"
-            />
-
-            <input
-              type="text"
-              placeholder="Note"
-              className="w-full border p-2 rounded mb-3"
-            />
+            <div className="flex gap-4 mb-3">
+              <button className="px-3 py-1 bg-green-500 text-white rounded">
+                Income
+              </button>
+              <button className="px-3 py-1 bg-red-500 text-white rounded">
+                Expense
+              </button>
+            </div>
+            <div className="flex gap-4 mb-3">
+              <p className="text-lg font-medium">Category</p>
+              <input
+                type="text"
+                placeholder="Category"
+                className="w-full border p-2 rounded mb-3 h-8"
+              />
+            </div>
+            <div className="flex gap-4 mb-3">
+              <p className="text-lg font-medium">Amount </p>
+              <input
+                type="number"
+                placeholder="Amount"
+                className="w-full border p-2 rounded mb-3"
+              />
+            </div>
+            <div className="flex gap-4 mb-3">
+              <p className="text-lg font-medium">Note</p>
+              <input
+                type="text"
+                placeholder="Note"
+                className="w-full border p-2 rounded mb-3"
+              />
+            </div>
 
             <div className="flex justify-end gap-2">
               <button
