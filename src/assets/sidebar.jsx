@@ -7,13 +7,13 @@ import settings from "../img/setting.svg";
 export default function Sidebar() {
   const navItems = [
     { name: "Dashboard", icon: home, path: "/" },
-    { name: "Transactions", icon: transactions, path: "/transactions" },
     { name: "Analytics", icon: analytics, path: "/analytics" },
+    { name: "Transactions", icon: transactions, path: "/transactions" },
     { name: "Settings", icon: settings, path: "/settings" },
   ];
 
   return (
-    <div className="w-20 h-screen bg-slate-100 text-black ">
+    <div className="fixed w-20 h-screen bg-slate-100 text-black ">
       <ul className=" space-y-4">
         {navItems.map((item) => (
           <li key={item.name}>
